@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conectar a MySQL"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        />
+
+    <EditText
+        android:id="@+id/edServidor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Dirección Servidor"
+        android:inputType="text"
+        android:layout_margin="16dp"
+        android:textSize="24sp"
+        />
+
+    <EditText
+        android:id="@+id/edPuerto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nº Puerto"
+        android:inputType="number"
+        android:layout_margin="16dp"
+        android:textSize="24sp"
+        />
+
+    <EditText
+        android:id="@+id/edUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Usuario"
+        android:layout_margin="16dp"
+        android:textSize="24sp"
+        />
+
+    <EditText
+        android:id="@+id/edPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:layout_margin="16dp"
+        android:textSize="24sp"
+        />
+
+    <Button
+        android:id="@+id/btnConectar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="abrirConexion"
+        android:text="Abrir Conexión"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        />
+
+</LinearLayout>
